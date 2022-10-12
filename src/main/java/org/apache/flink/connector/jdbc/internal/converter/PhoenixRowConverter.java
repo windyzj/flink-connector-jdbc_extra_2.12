@@ -1,0 +1,18 @@
+package org.apache.flink.connector.jdbc.internal.converter;
+
+import org.apache.flink.table.types.logical.RowType;
+
+
+public class PhoenixRowConverter extends AbstractJdbcRowConverter{
+
+    //FIXED FOR PHOENIX
+    public PhoenixRowConverter(RowType rowType) {
+        super(rowType);
+    }
+
+    @Override
+    public String converterName() {
+        return "Phoenix";
+    }
+
+}
