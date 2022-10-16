@@ -1,7 +1,14 @@
 # flink-connector-jdbc_extra_2.12
 flink-connector-jdbc 增加了phoenix 的支持
  
-
+### 引入依赖
+```xml
+        <dependency>
+            <groupId>com.atguigu</groupId>
+            <version>1.13.5</version>
+            <artifactId>flink-connector-jdbc_extra_2.12</artifactId>
+        </dependency>
+ ```
 ###  用法说明
 ```xml
    CREATE TABLE base_dic ( 
